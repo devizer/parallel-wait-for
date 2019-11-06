@@ -3,7 +3,7 @@ Cross-platform tool for CI &amp; testing using external dependencies
 
 #### ./WaitFor [-Timeout=second]
 
-It's a sandbox app which intended to check initialization of storage services. It supports native protocols of 5 kinds of storage/APIs:
+It's a console app which intended to check initialization of dependencies. It supports native protocols of 9+ kinds of storage/APIs:
 * MSSQL Server
 * Postgres SQL
 * MySQL
