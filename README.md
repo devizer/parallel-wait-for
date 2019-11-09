@@ -37,7 +37,7 @@ Along with basic http(s) check it allows to specify:
 * specify valid status codes. for example `Valid Status: 200;` or `Valid Status: 42,100-399`;
 * check for a REST API endpoint, for example
 ```
-http://mywebapi:80/get-status; Valid Status=200,403,100-499; Allow Untrusted = true; Method=POST; *Accept=application/json, text/javascript; Payload={'verbosity':'normal'}"
+parallel-wait-for -timeout=30 "-http=http://mywebapi:80/get-status; Valid Status=200,403,100-499; Allow Untrusted = true; Method=POST; *Accept=application/json, text/javascript; Payload={'verbosity':'normal'}"
 ```
 
 By default an self-signed certificate is allowed and valid statuses are 100-399
