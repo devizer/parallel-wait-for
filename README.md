@@ -27,6 +27,7 @@ It is sh-freendle. Bash is not required.
 
 It supports almost any **x64/arm/arm64** Linux and macOS 10.12+. The oldest supported versions of linux are: CentOS/RedHat 6, Debian 8, Ubuntu 14.04, Fedora 26
 
+It utilizes either `curl` or `wget` depending what is preinstalled on your linux during installation
 
 #### Source Code
 https://github.com/devizer/DockerLab
