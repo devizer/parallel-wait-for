@@ -25,7 +25,7 @@ Wait_For_Http_Google_404="https://google.com/404; Valid Status = 404; Timeout = 
 For connection string examples please take a look at `environment` sub tree of intergation tests via [docker-compose.yml](https://github.com/devizer/DockerLab/blob/master/compose/docker-compose.yml) on travis-ci.org
 
 ### Installer 
-It is `sh`- and slim containers friendlн. bash is not required.
+It is `sh`- and slim containers friendly. bash is not required.
 
 It supports almost any **x64/arm/arm64** Linux and macOS 10.12+. The oldest supported versions of linux are: CentOS/RedHat 6, Debian 8, Ubuntu 14.04, Fedora 26
 
