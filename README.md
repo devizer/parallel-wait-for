@@ -25,7 +25,7 @@ Wait_For_Http_Google_404="https://google.com/404; Valid Status = 404; Timeout = 
 For connection string examples please take a look at `environment` sub tree of intergation tests via [docker-compose.yml](https://github.com/devizer/DockerLab/blob/master/compose/docker-compose.yml) on travis-ci.org
 
 ### Installer 
-It is a single `sh`-script for all the 6 platforms:
+It is a single sh-script for all the 6 platforms:
 * Linux x64
 * Linux arm 32bit (v7+)
 * Linux armv8 64 bit (aarch64)
