@@ -33,9 +33,12 @@ It utilizes either `curl` or `wget` depending what is preinstalled on your linux
 Along with basic http(s) check it allows to spcify:
 * check or ignore https certificates: `Allow Untrusted: true|false;`
 * specify valid status codes. for example `Valid Status: 200;` or `Valid Status: 42,100-399`;
-* check for Web API, for example `Valid Status=200,403,100-499; Uri=http://mywebapi:80/get-status; Allow Untrusted = true; Method=POST; *Accept=application/json, text/javascript; Payload={'verbosity':'normal'}"`
+* check for Web API, for example
+```
+http://mywebapi:80/get-status; Valid Status=200,403,100-499; Allow Untrusted = true; Method=POST; *Accept=application/json, text/javascript; Payload={'verbosity':'normal'}"
+```
 
-By default Untrusted certificates is allowed and valid statuses are 100-399
+By default an self-signed certificate is allowed and valid statuses are 100-399
 
 #### Source Code
 https://github.com/devizer/DockerLab
