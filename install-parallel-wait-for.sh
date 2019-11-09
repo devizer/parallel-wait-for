@@ -57,7 +57,7 @@ if [ -n "${LINK_DIR:-}" ]; then
 else
     cmd3="echo WaitFor installed: $INSTALL_DIR/WaitFor"
 fi
-for cmd in "$cmd1" "$cmd2" "$cmd3"; do
+for cmd in "$cmd1" "$cmd2" "$cmd2a" "$cmd3"; do
     sudo true >/dev/null 2>&1 && eval "sudo $cmd" || eval "$cmd"
 done
 rm -rf "$copy" || true
