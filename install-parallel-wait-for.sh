@@ -42,10 +42,16 @@ copy=$HOME/$file
 INSTALL_DIR="${INSTALL_DIR:-/opt/parallel-wait-for}"
 LINK_DIR="${LINK_DIR:-/usr/local/bin}"
 
+if [ "${INSTALL_DIR}" = "/" ]; then
+    echo "Installing to the root is not available"
+    exit 1;
+fi
+
 echo "downloading $url ..."
 wget --no-check-certificate -O "$copy" "$url"  || curl -kfSL -o "$copy" "$url"
 cmd1="mkdir -p \"$INSTALL_DIR\""
-cmd2="tar xzf \"$copy\" -C \"$INSTALL_DIR\""
+cmd2="rm -f \"$INSTALL_DIR/*\""
+cmd2a="tar xzf \"$copy\" -C \"$INSTALL_DIR\""
 if [ -n "${LINK_DIR:-}" ]; then
     cmd3="ln -s -f \"$INSTALL_DIR/WaitFor\" \"$LINK_DIR/parallel-wait-for\" && echo link to parallel-wait-for installed into $LINK_DIR"
 else
