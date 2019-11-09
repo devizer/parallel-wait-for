@@ -1,8 +1,6 @@
 ## parallel-wait-for
 Cross-platform tool for CI &amp; testing & single host deployment with external dependencies
 
-### ./WaitFor [-Timeout=second]
-
 It's a console app which intended to check initialization of dependencies. It supports native protocols of 9+ kinds of storage/APIs:
 * MSSQL Server
 * Postgres SQL
@@ -20,8 +18,10 @@ This example will check two RDBMS server: SQLServer sqlserver1 and MySQL mysql1
 
 ```
 WAIT_FOR_MySQL="Server = mysql1; Port=3306; Uid = root; Pwd = your_password; Connect Timeout = 5" \
-./WaitFor -Timeout=60 "-MSSQL=Data Source=sqlserver1; User ID=sa; Password=your_password; Timeout = 5"
+Wait_For_Http_Google_404="https://google.com/404; Valid Status = 404; Timeout = 3" \
+./WaitFor -Timeout=60 "-MsSql=Data Source=sqlserver1; User ID=sa; Password=your_password; Timeout = 5"
 ```
+
 ### Installer 
 It is `sh`-freendle. bash is not required.
 
