@@ -24,6 +24,7 @@ WAIT_FOR_MySQL="Server = mysql1; Port=3306; Uid = root; Pwd = your_password; Con
 ```
 #### Installer
 It is sh-freendle. Bash is not required.
+
 It support Linux almost any **x64/arm/arm64** linux and macOS 10.12+. The oldest supported versions of linux are: CentOS/RedHat 6, Debian 8, Ubuntu 14.04
 
 
