@@ -33,7 +33,7 @@ elif [ -e /etc/redhat-release ]; then
     "Red Hat Enterprise Linux Server release 6."*)  rid=rhel.6-x64 ;;
   esac
 fi
-echo "The OS architecture: $rid"
+echo "The runtime identifier: $rid"
 
 file=parallel-wait-for-$rid.tar.gz
 url=https://raw.githubusercontent.com/devizer/parallel-wait-for/master/public/$file
