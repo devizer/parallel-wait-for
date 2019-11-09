@@ -14,7 +14,7 @@ case $machine in
   *)                                             ;;
 esac
 
-kname="$(uname -s || true)"; kname="${machine:-unknown}"
+kname="$(uname -s || true)"; kname="${kname:-unknown}"
 case $kname in
   "Darwin"*)  rid=osx-x64 ;;
   "MSYS"*)    rid=win-x64; echo "For windows please use powershell installer" >&2; exit 1 ;;
@@ -52,7 +52,6 @@ else
     cmd3="echo WaitFor installed: $INSTALL_DIR/WaitFor"
 fi
 for cmd in "$cmd1" "$cmd2" "$cmd3"; do
-    # echo "COMMAND1: [$cmd]"
     sudo true >/dev/null 2>&1 && eval "sudo $cmd" || eval "$cmd"
 done
 rm -rf "$copy" || true
