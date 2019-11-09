@@ -41,7 +41,7 @@ Link: [install-parallel-wait-for.sh](https://raw.githubusercontent.com/devizer/p
 
 By default the installer extracts the parallel-wait-for to `/opt/parallel-wait-for` and creates symlink in `/usr/local/bin`
 
-It is `sh`- and slim containers friendly. bash is not required.
+It is sh- and slim containers friendly. bash is not required.
 
 ### http
 Along with basic http(s) check it allows to specify:
