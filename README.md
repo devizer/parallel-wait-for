@@ -30,10 +30,10 @@ It supports almost any **x64/arm/arm64** Linux and macOS 10.12+. The oldest supp
 It utilizes either `curl` or `wget` depending what is preinstalled on your linux during installation
 
 #### http
-Along with basic http(s) check it allows to spcify:
+Along with basic http(s) check it allows to specify:
 * check or ignore https certificates: `Allow Untrusted: true|false;`
 * specify valid status codes. for example `Valid Status: 200;` or `Valid Status: 42,100-399`;
-* check for Web API, for example
+* check for a REST API endpoint, for example
 ```
 http://mywebapi:80/get-status; Valid Status=200,403,100-499; Allow Untrusted = true; Method=POST; *Accept=application/json, text/javascript; Payload={'verbosity':'normal'}"
 ```
