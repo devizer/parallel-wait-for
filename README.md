@@ -23,11 +23,11 @@ Wait_For_Http_Google_404="https://google.com/404; Valid Status = 404; Timeout = 
 ```
 
 ### Installer 
-It is `sh`-freendle. bash is not required.
+It is `sh`- and slim containers friendlн. bash is not required.
 
 It supports almost any **x64/arm/arm64** Linux and macOS 10.12+. The oldest supported versions of linux are: CentOS/RedHat 6, Debian 8, Ubuntu 14.04, Fedora 26
 
-It utilizes either `curl` or `wget` depending what is preinstalled on your linux during installation
+It utilizes either `curl` or `wget` depending what is preinstalled on your linux during installation. For https curl is required.
 
 Link: [install-parallel-wait-for.sh](https://raw.githubusercontent.com/devizer/parallel-wait-for/master/install-parallel-wait-for.sh)
 
