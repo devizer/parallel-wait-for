@@ -23,7 +23,7 @@ WAIT_FOR_MySQL="Server = mysql1; Port=3306; Uid = root; Pwd = your_password; Con
 ./WaitFor -Timeout=60 "-MSSQL=Data Source=sqlserver1; User ID=sa; Password=your_password; Timeout = 5"
 ```
 #### Installer for linux: [install-parallel-wait-for.sh](https://raw.githubusercontent.com/devizer/parallel-wait-for/master/install-parallel-wait-for.sh)
-It is sh-freendle. Bash is not required.
+It is `sh`-freendle. bash is not required.
 
 It supports almost any **x64/arm/arm64** Linux and macOS 10.12+. The oldest supported versions of linux are: CentOS/RedHat 6, Debian 8, Ubuntu 14.04, Fedora 26
 
