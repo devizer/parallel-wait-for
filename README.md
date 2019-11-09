@@ -25,7 +25,13 @@ Wait_For_Http_Google_404="https://google.com/404; Valid Status = 404; Timeout = 
 For connection string examples please take a look at `environment` sub tree of intergation tests via [docker-compose.yml](https://github.com/devizer/DockerLab/blob/master/compose/docker-compose.yml) on travis-ci.org
 
 ### Installer 
-It is `sh`- and slim containers friendly. bash is not required.
+It is a single `sh`-script for all the 6 platforms:
+* Linux x64
+* Linux arm 32bit (v7+)
+* Linux armv8 64 bit (aarch64)
+* Linux MUSL (Alpine 3.7+)
+* CentOS and RedHat 6
+* OSX 10.12+
 
 It supports almost any **x64/arm/arm64** Linux and macOS 10.12+. The oldest supported versions of linux are: CentOS/RedHat 6, Debian 8, Ubuntu 14.04, Fedora 26
 
@@ -34,6 +40,8 @@ It utilizes either `curl` or `wget` depending what is preinstalled on your linux
 Link: [install-parallel-wait-for.sh](https://raw.githubusercontent.com/devizer/parallel-wait-for/master/install-parallel-wait-for.sh)
 
 By default the installer extracts the parallel-wait-for to `/opt/parallel-wait-for` and creates symlink in `/usr/local/bin`
+
+It is `sh`- and slim containers friendly. bash is not required.
 
 ### http
 Along with basic http(s) check it allows to specify:
